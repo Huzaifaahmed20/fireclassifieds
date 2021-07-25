@@ -1,10 +1,14 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:fireclassifieds/screens/ad_listing.dart';
 import 'package:fireclassifieds/screens/ad_posting.dart';
 import 'package:fireclassifieds/screens/login.dart';
 import 'package:fireclassifieds/screens/my_ads.dart';
+import 'package:fireclassifieds/services/firebase_service.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await FirebaseService.init();
   runApp(MyApp());
 }
 
@@ -16,7 +20,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/login',
+      initialRoute:
+          FirebaseAuth.instance.currentUser != null ? '/ad-listing' : '/login',
       routes: {
         '/login': (ctx) => Login(),
         '/ad-posting': (ctx) => AdPosting(),

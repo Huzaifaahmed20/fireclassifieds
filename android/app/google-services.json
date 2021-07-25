@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "529370622384",
+    "project_id": "fireclassifieds-245b0",
+    "storage_bucket": "fireclassifieds-245b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529370622384:android:e8de5f15c4b1b230ad0e75",
+        "android_client_info": {
+          "package_name": "com.example.fireclassifieds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529370622384-ehd3kd9ev83kd623rohupeh4grniq0du.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVTasyYeGAx2f_PdrkoAsQ_7Mxs0SR84w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529370622384-ehd3kd9ev83kd623rohupeh4grniq0du.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "529370622384-mk5i6j2a91p3m2h67rq1q5lfngok5ejv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fireclassifieds"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
